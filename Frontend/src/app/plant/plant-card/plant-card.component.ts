@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-plant-card',
@@ -6,12 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plant-card.component.css']
 })
 export class PlantCardComponent implements OnInit {
-
-  Item: any = {
-    "PlantId": 1,
-    "PlantName": "Tomato",
-    "Type": "Vegetable"
-  }
+@Input() plantitem : any;
 
   constructor() { }
 
